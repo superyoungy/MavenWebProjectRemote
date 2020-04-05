@@ -16,6 +16,8 @@ import java.io.IOException;
 public class AddToCart extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         String pid=request.getParameter("id");//获取product的id
         Product product=new QueryProductImpl().QueryProductById(pid);//查询product
         //session中得到购物车cart

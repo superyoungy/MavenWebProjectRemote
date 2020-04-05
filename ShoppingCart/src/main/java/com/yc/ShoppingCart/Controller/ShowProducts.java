@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.List;
 
 
@@ -17,6 +16,8 @@ import java.util.List;
 public class ShowProducts extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         List<Product> list = new QueryProductImpl().QueryAll();
         request.setAttribute("products",list);
         request.getRequestDispatcher("/WEB-INF/views/showProducts.jsp").forward(request,response);

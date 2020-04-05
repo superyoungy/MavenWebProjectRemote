@@ -16,6 +16,8 @@ import java.text.DecimalFormat;
 public class ShowCart extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         //请求转发到前端页面
         request.getRequestDispatcher("/WEB-INF/views/showCart.jsp").forward(request,response);
     }

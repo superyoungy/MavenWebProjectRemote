@@ -1,6 +1,6 @@
 package com.yc.ShoppingCart.Controller;
 
-import com.yc.ShoppingCart.daoImpl.QueryProductImpl;
+import com.yc.ShoppingCart.dao.mpl.QueryProductImpl;
 import com.yc.ShoppingCart.entity.Product;
 import com.yc.ShoppingCart.entity.ShoppingCart;
 

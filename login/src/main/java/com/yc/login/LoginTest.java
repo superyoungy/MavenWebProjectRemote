@@ -20,8 +20,10 @@ public class LoginTest extends HttpServlet {
 
         System.out.println(request.getSession().getAttribute("vertificationCode").toString());//后写的session会覆盖前面的session
 
-        String checkCode=request.getParameter("vertificationCodeInput");
-        String sessionCode=request.getSession().getAttribute("vertificationCode").toString();
+        String checkCode="";//赋初值，防止空指针
+        String sessionCode="";
+        checkCode=request.getParameter("vertificationCodeInput");
+        sessionCode=request.getSession().getAttribute("vertificationCode").toString();
         if(!checkCode.equals(sessionCode)) {
             request.setAttribute("info","验证码错误！");
             request.getRequestDispatcher("/index.jsp").forward(request,response);

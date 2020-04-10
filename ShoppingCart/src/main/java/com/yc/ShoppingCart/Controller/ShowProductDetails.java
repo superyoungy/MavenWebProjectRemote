@@ -1,6 +1,6 @@
 package com.yc.ShoppingCart.Controller;
 
-import com.yc.ShoppingCart.daoImpl.QueryProductImpl;
+import com.yc.ShoppingCart.dao.mpl.QueryProductImpl;
 import com.yc.ShoppingCart.entity.Product;
 
 import javax.servlet.ServletException;
@@ -10,10 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Stack;
 
 //根据request域中的id值模拟查询指定商品，并将商品信息放到request域中，然后请求转发到显示界面
 @WebServlet("/showProductDetails")

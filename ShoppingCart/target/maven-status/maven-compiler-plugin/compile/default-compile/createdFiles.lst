@@ -2,9 +2,9 @@ com\yc\ShoppingCart\entity\Product.class
 com\yc\ShoppingCart\entity\ShoppingCart.class
 com\yc\mineJSTLfunction\Function.class
 com\yc\ShoppingCart\Controller\ShowProducts.class
-com\yc\ShoppingCart\daoImpl\QueryProductImpl.class
 com\yc\ShoppingCart\dao\QueryProduct.class
 com\yc\ShoppingCart\entity\Item.class
 com\yc\ShoppingCart\Controller\AddToCart.class
 com\yc\ShoppingCart\Controller\ShowCart.class
+com\yc\ShoppingCart\dao\mpl\QueryProductImpl.class
 com\yc\ShoppingCart\Controller\ShowProductDetails.class

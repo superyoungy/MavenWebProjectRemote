@@ -23,9 +23,9 @@
     <table>
         <tr><td> 用户名：</td><td><input type="text" name="username" value="${cookie.username.value}"/></td></tr>
         <tr><td> 密码:</td><td><input type="text" name="password" value="${cookie.password.value}"/></td></tr>
-        <tr><td>二维码：</td><td><input type="text" name="vertificationCodeInput"/></td></tr>
+        <tr><td>验证码：</td><td><input type="text" name="vertificationCodeInput"/></td></tr>
         <td colspan="2" align="right"><img id="vertificationCode" src="${pageContext.request.contextPath}/vertificationCodeImage"><a href="javascript:refresh()">看不清楚，换一张</a></td>
-        <tr><td colspan="2">记住我<input type="checkbox" name="flag" value="true"/></td></tr>
+        <tr><td colspan="2">记住我<input type="checkbox" name="flag" value="true" checked/></td></tr>
         <tr><td colspan="2"><input type="submit" value="login"/></td></tr>
     </table>
 </form>

@@ -1,9 +1,9 @@
 package com.yc.string;
-
-import org.apache.lucene.util.RamUsageEstimator;
-
+/*
+* RamUsageEstimator4.0.0可以输出预期结果，现在用7.1.0会抛空指针错误
+* */
 public class TestNullAndNothing {
-    int a;//自动赋值为0；如果是对象，自动赋值为null
+/*    int a;//自动赋值为0；如果是对象，自动赋值为null
 //    String sss;
     public static void main(String[] args) {
 
@@ -17,5 +17,5 @@ public class TestNullAndNothing {
         int b=11;//变量不初始化编译不能通过
         System.out.println("全局变量不赋值："+RamUsageEstimator.sizeOf(new TestNullAndNothing().a));
         System.out.println("变量赋初值："+RamUsageEstimator.sizeOf(b));
-    }
+    }*/
 }
